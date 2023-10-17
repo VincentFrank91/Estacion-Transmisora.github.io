@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #46CFEA;
+    color: #253557;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+.hero-header {
+    width: 100%;
+    height: auto;
+}
+
+.hero-description {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.hero-invitation {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #253557;
+    color: #74dbef;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #344b7b;
+}
+.content-wrapper {
+    min-height: calc(91% - 60px);
+    padding-bottom: 60px; 
+}
+
+footer {
+    background-color: #253557;
+    color: #74dbef;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

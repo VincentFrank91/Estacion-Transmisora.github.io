@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Inicio - Paquidermo</title>
+</head>
+<body>
+    <div class="content-wrapper">
+    <header>
+        <img src="logoredondo76x76.svg" alt="Logo Paquidermo" class="logo">
+        <input type="search" placeholder="Buscar..." class="search">
+        <nav class="main-nav">
+            <a href="#">Perfil</a>
+            <a href="#">Notificaciones</a>
+            <a href="sobrenosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <aside class="left-column">
+            <nav>
+                <a href="#">Mis avances</a>
+                <a href="#">Estadisticas</a>
+                <a href="#">Mis materias</a>
+                <a href="#">Continuar</a>
+                <a href="#">Me gustaron</a>
+                <a href="#">Tendencias</a>
+                <a href="#">Mejor Calificado</a>
+                
+            </nav>
+        </aside>
+        <section class="video-section">
+            <div class="video-row">
+                <div class="video-container">
+
+                    <!-- Aqui se pega el frame de Youtube-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFR2lqBYPs?si=8JeH4VSB3__kQ3cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+                <div class="video-container">
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e93XMfXVxuo?si=MpPtUP9QCwII1IJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xnZwaoszOwY?si=1Dw1t7u1zWIW41SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="video-row">
+                <div class="video-container">
+
+                    <!-- Aqui se pega el frame de Youtube-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sReLFma-aFg?si=2wKw7znKU-sQBMI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y891OmY085c?si=kkkZ4N741JmKX4DV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wZih52NyGvI?si=UReQtrXIG-z_W-QG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="video-row">
+                <div class="video-container">
+
+                    <!-- Aqui se pega el frame de Youtube-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFR2lqBYPs?si=8JeH4VSB3__kQ3cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e93XMfXVxuo?si=MpPtUP9QCwII1IJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xnZwaoszOwY?si=1Dw1t7u1zWIW41SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <aside class="right-column">
+            <nav>
+                <a href="#" id="openCalculator">Calculadora</a>
+                <a href="#">Notas y apuntes</a>
+                <a href="sugerencias.html">Sugerencias</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Cerrar Sesión</a>
+                <a href="#">FAQ's</a>
+            </nav>
+        </aside>
+        <div id="calculatorModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- Contenido de la calculadora -->
+                <div class="calculator">
+                    <input type="text" id="display" readonly>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('-')">-</button>
+    <button onclick="appendToDisplay('+')">+</button>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button onclick="appendToDisplay('/')">/</button>
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+        </main>
+        </div>
+        <footer>
+            <p>&copy; 2023 Paquidermo. Todos los derechos reservados.</p>
+        </footer>  
+        <script>
+            var modal = document.getElementById('calculatorModal');
+            var btn = document.getElementById("openCalculator");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+        
+            // Cuando el usuario haga clic en (x) cierra el modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        
+            // Cierra cuando el usuario haga clic en cualquier lugar fuera del modal
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        
+        <script>
+            function appendToDisplay(value) {
+                document.getElementById('display').value += value;
+            }
+        
+            function clearDisplay() {
+                document.getElementById('display').value = '';
+            }
+        
+            function calculate() {
+                let result = eval(document.getElementById('display').value);
+                document.getElementById('display').value = result;
+            }
+        </script>
+        </body>
+        </html>
